@@ -1,0 +1,156 @@
+/* CSS Code For Terms & Conditions Page */
+
+/* Hero Image Section */
+.bg-hero-conditions{
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 3%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('../image/banner-image/hero-privacy-terms.jpg');
+}
+/* Hero Image Section */
+
+/* Terms & Conditions Section */
+.terms-conditions{
+    gap: 3rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 8rem 12rem;
+}
+
+.terms-conditions h2{
+    font-size: 2.2rem;
+    font-weight: normal;
+    font-family: "Work Sans", sans-serif;
+    color: #8d4bf6;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase; 
+}
+
+.terms-conditions h6{
+    color: #f12b00;
+    font-size: 1.8rem;
+    font-weight: normal;
+    font-family: "Work Sans", sans-serif;
+    text-transform: none; 
+    text-transform: uppercase;
+    letter-spacing: normal; 
+}
+
+.terms-conditions p{
+    font-weight: normal;
+    font-size: 1.6rem;
+    font-family: "Work Sans", sans-serif;
+    color: black;
+    text-align: justify;
+    text-transform: none;  
+    letter-spacing: normal
+}
+/* Terms & Conditions Section */
+
+/* CSS Code For Terms & Conditions Page */
+
+/* ===== +++++ ===== */
+
+/* When It Will Go To The Mobile Menu Option */
+
+    @media screen and (max-device-width: 480px)  {
+
+        /* Smartphones */ 
+        /* Terms & Conditions Section */
+        .terms-conditions{
+            gap: 1.5rem;
+            padding: 3.5rem 2.5rem;
+        }
+
+        .terms-conditions h2{
+            font-size: 2.2rem;
+            letter-spacing: 0.1rem; 
+        }
+
+        .terms-conditions h6{
+            font-size: 1.6rem;
+        }
+
+        .terms-conditions p{
+            font-size: 1.3rem;
+        }
+        /* Terms & Conditions Section */
+    }
+
+    @media screen and (min-device-width: 481px) and (max-device-width: 768px)  { 
+
+        /* Tablets */  
+        /* Terms & Conditions Section */
+        .terms-conditions{
+            gap: 2rem;
+            padding: 4rem 3rem;
+        }
+
+        .terms-conditions h2{
+            font-size: 2.4rem;
+            letter-spacing: 0.1rem;
+        }
+
+        .terms-conditions h6{
+            font-size: 1.7rem; 
+        }
+
+        .terms-conditions p{
+            font-size: 1.4rem;
+        }
+        /* Terms & Conditions Section */
+    }
+
+    @media screen and (min-device-width: 769px) and (max-device-width: 991px)  { 
+
+        /* Small Screens Devices, Laptops */  
+        /* Terms & Conditions Section */
+        .terms-conditions{
+            gap: 2.5rem;
+            padding: 4.5rem 3.5rem;
+        }
+
+        .terms-conditions h2{
+            font-size: 2.6rem;
+            letter-spacing: 0.1rem;
+        }
+
+        .terms-conditions h6{
+            font-size: 1.8rem; 
+        }
+
+        .terms-conditions p{
+            font-size: 1.5rem;
+        }
+        /* Terms & Conditions Section */
+    }
+
+    @media screen and (min-device-width: 992px) and (max-device-width: 1024px)  { 
+
+        /* Large Screens Devices & Desktops */
+        /* Terms & Conditions Section */
+        .terms-conditions{
+            gap: 3rem;
+            padding: 5rem 4rem;
+        }
+
+        .terms-conditions h2{
+            font-size: 2.8rem;
+        }
+
+        .terms-conditions h6{
+            font-size: 1.9rem;
+        }
+
+        .terms-conditions p{
+            font-size: 1.6rem;
+        }
+        /* Terms & Conditions Section */
+    }
+
+/* When It Will Go To The Mobile Menu Option */

@@ -1,0 +1,225 @@
+/* CSS Code For Meet SS Page */
+
+/* Hero Image Section */ 
+.bg-hero-meet{
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 95%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('../image/banner-image/hero-meet.jpg');
+}
+/* Hero Image Section */ 
+
+/* Meet SS Section */
+.tab{
+    gap: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4rem 0rem 0rem 6rem;
+}
+
+.tablinks{
+    font-weight: 400;
+    font-size: 2.5rem;
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: #323232;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.tablinks:after, .tablinks:before{
+    color: #323232;
+    transition: all 0.8s ease; 
+}
+
+.tablinks:after{
+    left: 0;
+    right: 0;
+    bottom: -1rem;
+    margin: auto;
+    width: 0%;
+    height: 0.3rem;
+    content: '';
+    position: absolute;
+    color: transparent;
+    background: #323232;
+}
+
+.tablinks:hover:after{
+    width: 100%;
+}
+
+.tablinks.active{
+    color: #8d4bf6;
+}
+  
+.tablinks.active:after{
+    left: 0;
+    right: 0;
+    bottom: -1rem;
+    margin: auto;
+    width: 100%;
+    height: 0.3rem;
+    content: '';
+    position: absolute;
+    color: transparent;
+    background: #8d4bf6;
+}
+  
+.tabcontent {
+    display: none;
+}
+
+.tab-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem 6rem;
+}
+
+.tab-text p{
+    color: #323232;
+    font-weight: normal;
+    font-size: 1.8rem;
+    font-family: "Work Sans", sans-serif;
+    text-align: justify;
+    text-transform: none; 
+    letter-spacing: normal;
+}
+/* Meet SS Section */
+
+/* CSS Code For Meet SS Page */
+
+/* ===== +++++ ===== */
+
+/* When It Will Go To The Mobile Menu Option */
+
+    @media screen and (max-device-width: 480px)  {
+
+        /* Smartphones */ 
+        /* Meet SS Section */
+        .tab{
+            gap: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 3rem 0rem 0rem 0rem;
+        }
+        
+        .tablinks{
+            font-size: 1.6rem;
+        }
+        
+        .tablinks:after{
+            height: 0.2rem;
+        }
+          
+        .tablinks.active:after{
+            height: 0.2rem;
+        }
+        
+        .tab-container{
+            padding: 3rem;
+        }
+        
+        .tab-text p{
+            font-size: 1.5rem;
+        }
+        /* Meet SS Section */
+    }
+
+    @media screen and (min-device-width: 481px) and (max-device-width: 768px)  { 
+
+        /* Tablets */  
+        /* Meet SS Section */
+        .tab{
+            gap: 3rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 4rem 0rem 0rem 3rem;
+        }
+        
+        .tablinks{
+            font-size: 1.8rem;
+        }
+        
+        .tab-container{
+            padding: 4rem 3rem;
+        }
+        
+        .tab-text p{
+            font-size: 1.6rem;
+        }
+        /* Meet SS Section */
+    }
+    @media screen and (min-device-width: 769px) and (max-device-width: 991px)  { 
+
+        /* Small Screens Devices, Laptops */  
+        /* Meet SS Section */
+        .tab{
+            gap: 5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 4rem 0rem 0rem 3rem;
+        }
+        
+        .tablinks{
+            font-size: 2rem;
+        }
+        
+        .tab-container{
+            padding: 4rem 3rem;
+        }
+        
+        .tab-text p{
+            font-size: 1.7rem;
+        }
+        /* Meet SS Section */
+    }
+    @media screen and (min-device-width: 992px) and (max-device-width: 1024px)  { 
+
+        /* Large Screens Devices & Desktops */
+        /* Meet SS Section */
+        .tab{
+            gap: 7rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 4rem 0rem 0rem 3rem;
+        }
+        
+        .tablinks{
+            font-size: 2.2rem;
+        }
+        
+        .tab-container{
+            padding: 4rem 3rem;
+        }
+        
+        .tab-text p{
+            font-size: 1.8rem;
+        }
+        /* Meet SS Section */
+    }
+
+/* When It Will Go To The Mobile Menu Option */
+
+
+

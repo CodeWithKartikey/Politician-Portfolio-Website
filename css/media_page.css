@@ -1,0 +1,424 @@
+/* CSS Code For Media Page */
+
+/* Hero Image Section */
+.bg-hero-media{
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 35%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('../image/banner-image/hero-media.jpg');
+}
+/* Hero Image Section */
+
+/* Media Section */
+.tab{
+    gap: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4rem 0rem 0rem 6rem;
+}
+
+.tablinks{
+    font-weight: normal;
+    font-size: 2.5rem;
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: #323232;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.tablinks:after, .tablinks:before{
+    color: #323232;
+    transition: all 0.8s ease; 
+}
+
+.tablinks:after{
+    left: 0;
+    right: 0;
+    bottom: -1rem;
+    margin: auto;
+    width: 0%;
+    height: 0.3rem;
+    content: '';
+    position: absolute;
+    color: transparent;
+    background: #323232;
+}
+
+.tablinks:hover:after{
+     width: 100%;
+}
+
+.tablinks.active{
+    color: #8d4bf6;
+}
+    
+.tablinks.active::after{
+    left: 0;
+    right: 0;
+    bottom: -1rem;
+    margin: auto;
+    width: 100%;
+    height: 0.3rem;
+    content: '';
+    position: absolute;
+    color: transparent;
+    background: #8d4bf6;
+}
+    
+.tabcontent {
+    display: none;
+}
+
+.tab-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem 6rem;
+}
+
+/* Gallery Section */
+.media-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.photo-thumbnails{
+    gap: 3rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    
+.photo-thumbnails img{
+    border: none;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 0.2rem;
+    aspect-ratio: 3 / 2;
+    width: calc(33.33% - 2rem);
+    transition: box-shadow 0.4s ease;
+}
+
+.photo-thumbnails img:hover {
+    box-shadow: 0 0 2rem #313131; 
+}
+
+.media-lightbox-container{  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+    position: fixed;
+}
+    
+.media-lightbox-overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+    
+.media-lightbox{
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+    
+.media-lightbox img{
+    width: 100%;
+    height: 50rem;
+    display: block;
+    object-fit: cover;
+}
+    
+.prev-btn, .next-btn{
+    top: 50%;
+    color: white;
+    background-color: #f12b00;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.8rem 0.9rem;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+}
+    
+.prev-btn{
+    left: 1rem;
+}
+    
+.next-btn{
+    right: 1rem;
+}
+    
+.close-btn{
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    background-color: #f12b00;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.7rem 0.9rem;
+    cursor: pointer;
+    position: absolute;
+}
+
+.gallery-index{
+    top: 1rem;
+    left: 1rem;
+    color: black;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+/* Gallery Section */
+
+/* Video Section */
+.video-thumbnails{
+    gap: 3rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.video-thumbnails iframe{
+    border: none;
+    display: block;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    aspect-ratio: 3 / 2;
+    width: calc(33.33% - 2rem);
+    transition: box-shadow 0.4s ease;
+}
+
+.video-thumbnails iframe:hover{
+    box-shadow: 0 0 2rem #313131; 
+}
+/* Video Section */
+/* Media Section */
+
+/* CSS Code For Media Page */
+
+/* ===== +++++ ===== */
+
+/* When It Will Go To The Mobile Menu Option */
+
+    @media screen and (max-device-width: 480px)  {
+
+        /* Smartphones */ 
+        /* Media Section */
+        .tab{
+            gap: 5rem;
+            padding: 3.5rem 0rem 0rem 2.5rem;
+        }
+        
+        .tablinks{
+            font-size: 2rem;
+        }
+        
+        .tab-container{
+            padding: 3.5rem 2.5rem;
+        }
+       
+        /* Gallery Section */
+        .photo-thumbnails{
+            gap: 2rem;
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    
+        .photo-thumbnails img{
+            width: 100%;
+            aspect-ratio: 3 / 2;
+        }
+
+        .media-lightbox img{
+            width: 36rem;
+            height: 24rem;
+        }
+        
+        .prev-btn, .next-btn{
+            font-size: 1.2rem;
+            padding: 0.5rem 0.6rem;
+        }
+        
+        .prev-btn{
+            left: 0.5rem;
+        }
+        
+        .next-btn{
+            right: 0.5rem;
+        }
+        
+        .close-btn{
+            top: 0.5rem;
+            right: 0.5rem;
+            padding: 0.3rem 0.6rem;
+        }
+        /* Gallery Section */
+
+        /* Video Section */
+        .video-thumbnails{
+            gap: 2rem;
+        }
+
+        .video-thumbnails iframe{
+            width: 100%;
+            aspect-ratio: 3 / 2;
+        }
+        /* Video Section */
+        /* Media Section */
+    }
+
+    @media screen and (min-device-width: 481px) and (max-device-width: 768px)  { 
+
+        /* Tablets */  
+        /* Media Section */
+        .tab{
+            gap: 6rem;
+            padding: 4rem 0rem 0rem 3rem;
+        }
+        
+        .tablinks{
+            font-size: 2.2rem;
+        }
+        
+        .tab-container{
+            padding: 4rem 3rem;
+        }
+
+        /* Gallery Section */
+        .photo-thumbnails{
+            gap: 2.5rem;
+        }
+            
+        .photo-thumbnails img{
+            aspect-ratio: 3 / 2;
+            width: calc(51% - 2rem);
+        }
+  
+        .media-lightbox img{
+            width: 50rem;
+            height: 40rem;
+        }
+            
+        .prev-btn, .next-btn{
+            font-size: 1.2rem;
+            padding: 0.5rem 0.6rem;
+        }
+        
+        .prev-btn{
+            left: 0.5rem;
+        }
+        
+        .next-btn{
+            right: 0.5rem;
+        }
+        
+        .close-btn{
+            top: 0.5rem;
+            right: 0.5rem;
+            padding: 0.3rem 0.6rem;
+        }
+        /* Gallery Section */
+
+        /* Video Section */
+        .video-thumbnails{
+            gap: 2.5rem;
+        }
+
+        .video-thumbnails iframe{
+            aspect-ratio: 3 / 2;
+            width: calc(51% - 2rem);
+        }
+        /* Video Section */
+        /* Media Section */
+    }
+
+    @media screen and (min-device-width: 769px) and (max-device-width: 991px)  { 
+
+        /* Small Screens Devices, Laptops */  
+        /* Media Section */
+        .tab{
+            gap: 7rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 4.5rem 0rem 0rem 3.5rem;
+        }
+        
+        .tablinks{
+            font-size: 2.4rem;
+        }
+        
+        .tab-container{
+            padding: 4.5rem 3.5rem;
+        }
+        /* Media Section */
+    }
+
+    @media screen and (min-device-width: 992px) and (max-device-width: 1024px)  { 
+
+        /* Large Screens Devices & Desktops */
+        /* Media Section */
+        .tab{
+            gap: 8rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 5rem 0rem 0rem 4rem;
+        }
+        
+        .tab-container{
+            padding: 5rem 4rem;
+        }
+        /* Media Section */
+    }
+
+/* When It Will Go To The Mobile Menu Option */

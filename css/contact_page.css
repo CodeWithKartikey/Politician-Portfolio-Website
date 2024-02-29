@@ -1,0 +1,545 @@
+/* CSS Code For Contact Page */
+
+/* Hero Image Section */
+.bg-hero-contact{
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('../image/banner-image/hero-contact.jpg');
+}
+/* Hero Image Section */
+ 
+/* Contact Section */
+.contact-page{
+    gap: 3rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 6rem 12rem;
+}
+
+.upper-section{
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.upper-section-heading{
+    color: #202020;
+    font-size: 3.5rem;
+    font-weight: normal;
+    font-family: 'Lilita One', cursive;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    text-transform: uppercase;  
+}
+
+.address{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.vertical-line{
+    width: 6rem;
+    height: 18rem;
+}
+
+.address-section{
+    gap: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem 0rem;
+}
+
+.address-section img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.address-sub-section{
+    gap: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.address-sub-section h6{
+    color: #f12b00;
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Lilita One', cursive;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize; 
+}
+
+.address-sub-section p{
+    color: black;
+    font-weight: normal;
+    font-size: 1.4rem;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 0.1rem;
+    text-transform: none; 
+}
+
+.contact-page-heading{
+    font-size: 4.5rem;
+    font-weight: normal;
+    font-family: 'Pacifico', cursive;
+    color: #f12b00;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    text-transform: capitalize; 
+}
+
+.lower-section{
+    width: 80%;
+}
+
+.column{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.row{
+    gap: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.column label{
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: normal;
+    text-transform: uppercase; 
+    color: #000000;
+}
+  
+input[type="text"],
+input[type="tel"],
+input[type="email"]{
+    width: 100%;
+    border-radius: none;
+    border: 1px solid #313131;
+    display: block;
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-family: "Work Sans", sans-serif;
+    color: black;
+    background-color: white;
+    margin: 1.5rem 0rem;
+    padding: 1.5rem 0rem 1.5rem 2rem; 
+}
+
+textarea[type="text"]{
+    width: 100%;
+    height: 20rem;
+    border-radius: none;
+    border: 1px solid #313131;
+    display: block;
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-family: "Work Sans", sans-serif;
+    color: black;
+    background-color: white;
+    margin: 1.5rem 0rem;
+    padding: 1.5rem 0rem 1.5rem 2rem; 
+}
+  
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea[type="text"]:focus{
+    outline: none;
+}
+  
+input[type="submit"]{
+    width: 15%;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    text-transform: uppercase;  
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    color: white;
+    background-color: #8d4bf6; 
+    transition: box-shadow 0.3s;
+    padding: 1.5rem 0rem;
+}
+  
+input[type="submit"]:hover{
+    box-shadow: 0 0 1rem #313131;
+}
+/* Contact Section */
+
+/* CSS Code For Contact Page */
+
+/* ===== +++++ ===== */
+
+/* When It Will Go To The Mobile Menu Option */
+
+    @media screen and (max-device-width: 480px)  {
+
+        /* Smartphones */
+        /* Contact Section */
+        .contact-page{
+            gap: 1.5rem;
+            padding: 3rem 2.5rem;
+        }
+        
+        .upper-section{
+            gap: 3rem;
+        }
+        
+        .upper-section-heading{
+            font-size: 2rem;
+            letter-spacing: 0.2rem;
+        }
+        
+        .address{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .vertical-line{
+            display: none;
+        }
+        
+        .address-section{
+            gap: 0.5rem;
+            padding: 2rem 0rem;
+        }
+        
+        .address-section img{
+            width: 4rem;
+            height: 4rem;
+        }
+        
+        .address-sub-section{
+            gap: 0.1rem;
+        }
+        
+        .address-sub-section h6{
+            font-size: 1.6rem;
+            letter-spacing: 0.1rem;
+        }
+        
+        .address-sub-section p{
+            font-size: 1.3rem;
+            letter-spacing: normal;
+        }
+        
+        .contact-page-heading{
+            font-size: 3rem;
+            letter-spacing: 0.2rem; 
+        }
+        
+        .lower-section{
+            width: 100%;
+        }
+        
+        .row{
+            gap: 1rem;
+        }
+        
+        .column label{
+            font-size: 1.3rem;
+        }
+          
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea[type="text"]{
+            font-size: 1.3rem;
+            margin: 1rem 0rem;
+            padding: 1rem 0rem 1rem 1rem; 
+        }
+          
+        input[type="submit"]{
+            width: 30%;
+            font-size: 1.3rem;
+            letter-spacing: 0.1rem;
+            padding: 1.2rem 0rem;
+        }
+        /* Contact Section */
+    }
+
+    @media screen and (min-device-width: 481px) and (max-device-width: 768px)  { 
+
+        /* Tablets */  
+        /* Contact Section */
+        .contact-page{
+            gap: 2rem;
+            padding: 4rem 3rem;
+        }
+        
+        .upper-section{
+            gap: 4rem;
+        }
+        
+        .upper-section-heading{
+            font-size: 2.4rem;
+            letter-spacing: 0.2rem;
+        }
+        
+        .address{
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .vertical-line{
+            display: none;
+        }
+        
+        .address-section{
+            gap: 0.5rem;
+            padding: 3rem 0rem;
+        }
+        
+        .address-section img{
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+        
+        .address-sub-section{
+            gap: 0.1rem;
+        }
+        
+        .address-sub-section h6{
+            font-size: 1.7rem;
+            letter-spacing: 0.1rem;
+        }
+        
+        .address-sub-section p{
+            font-size: 1.4rem;
+            letter-spacing: normal;
+        }
+        
+        .contact-page-heading{
+            font-size: 3.4rem;
+            letter-spacing: 0.2rem; 
+        }
+        
+        .lower-section{
+            width: 90%;
+        }
+        
+        .row{
+            gap: 1.5rem;
+        }
+        
+        .column label{
+            font-size: 1.4rem;
+        }
+          
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea[type="text"]{
+            font-size: 1.4rem;
+            margin: 1.1rem 0rem;
+            padding: 1rem 0rem 1rem 1rem; 
+        }
+          
+        input[type="submit"]{
+            width: 25%;
+            font-size: 1.4rem;
+            letter-spacing: 0.1rem;
+            padding: 1.3rem 0rem;
+        }
+        /* Contact Section */
+    }
+    
+    @media screen and (min-device-width: 769px) and (max-device-width: 991px)  { 
+
+        /* Small Screens Devices, Laptops */  
+        /* Contact Section */
+        .contact-page{
+            gap: 2.5rem;
+            padding: 4.5rem 3.5rem;
+        }
+        
+        .upper-section{
+            gap: 4.5rem;
+        }
+        
+        .upper-section-heading{
+            font-size: 2.8rem;
+            letter-spacing: 0.3rem;
+        }
+        
+        .address{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .vertical-line{
+            width: 4rem;
+            height: 12rem;
+        }
+        
+        .address-section{
+            gap: 0.5rem;
+            padding: 4rem 0rem;
+        }
+        
+        .address-section img{
+            width: 5rem;
+            height: 5rem;
+        }
+        
+        .address-sub-section h6{
+            font-size: 1.8rem;
+            letter-spacing: 0.1rem;
+        }
+        
+        .address-sub-section p{
+            font-size: 1.4rem;
+            letter-spacing: normal;
+        }
+        
+        .contact-page-heading{
+            font-size: 3.8rem;
+            letter-spacing: 0.3rem; 
+        }
+        
+        .lower-section{
+            width: 90%;
+        }
+        
+        .row{
+            gap: 2rem;
+        }
+        
+        .column label{
+            font-size: 1.4rem;
+        }
+          
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea[type="text"]{
+            font-size: 1.4rem;
+            margin: 1.2rem 0rem;
+            padding: 1rem 0rem 1rem 1rem; 
+        }
+          
+        input[type="submit"]{
+            width: 20%;
+            font-size: 1.4rem;
+            letter-spacing: 0.1rem;
+            padding: 1.4rem 0rem;
+        }
+        /* Contact Section */
+    }
+
+    @media screen and (min-device-width: 992px) and (max-device-width: 1024px)  { 
+
+        /* Large Screens Devices & Desktops */
+        /* Contact Section */
+        .upper-section{
+            gap: 5rem;
+        }
+        
+        .upper-section-heading{
+            font-size: 3.2rem;
+            letter-spacing: 0.3rem;
+        }
+
+        .address{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .vertical-line{
+            width: 5rem;
+            height: 15rem;
+        }
+        
+        .address-section img{
+            width: 5.5rem;
+            height: 5.5rem;
+        }
+        
+        .address-sub-section h6{
+            font-size: 1.9rem;
+            letter-spacing: 0.1rem;
+        }
+        
+        .address-sub-section p{
+            font-size: 1.4rem;
+        }
+        
+        .contact-page-heading{
+            font-size: 4.2rem;
+            letter-spacing: 0.3rem; 
+        }
+        
+        .lower-section{
+            width: 85%;
+        }
+        
+        .row{
+            gap: 2.5rem;
+        }
+        
+        .column label{
+            font-size: 1.4rem;
+        }
+          
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea[type="text"]{
+            font-size: 1.4rem;
+            margin: 1.3rem 0rem;
+            padding: 1rem 0rem 1rem 1rem; 
+        }
+          
+        input[type="submit"]{
+            width: 20%;
+            font-size: 1.4rem;
+            letter-spacing: 0.1rem;
+            padding: 1.4rem 0rem;
+        }
+        /* Contact Section */
+    }
+
+/* When It Will Go To The Mobile Menu Option */

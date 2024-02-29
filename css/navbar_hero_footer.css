@@ -1,0 +1,1324 @@
+/* CSS Code For Navbar Section Is Using All The Pages For This Website. */
+
+/* Navbar Section */
+.header{
+    z-index: 9999;
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+    transition: height 0.5s ease, 
+                background-color 0.5s ease, 
+                box-shadow 0.5s ease;
+}
+
+.scrolled {
+    height: 8rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Standard Box Shadow */
+    -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Firefox */
+    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Chrome, Safari */
+}
+
+.logo{
+    gap: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 5.5rem;
+    height: 5.5rem;
+    transition: width 0.5s ease, 
+                height 0.5s ease;
+}
+
+.scrolled .logo img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.logo-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.8rem;
+    font-weight: normal;
+    font-family: 'Lilita One', cursive;
+    color: white;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    transition: color 0.5s ease,
+                font-size 0.5s ease;
+}
+
+.scrolled .logo-name{
+    color: #8d4bf6;
+    font-size: 2.5rem;
+}
+
+.navbar-list{
+    gap: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar-link{
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    display: inline-block;
+    transition: color 0.5s ease;
+}
+
+.navbar-link:after, 
+.navbar-link:before
+{
+    color: white;
+    transition: all 0.5s; 
+}
+
+.navbar-link:after{
+    left: 0;
+    right: 0;
+    top: -1rem;
+    margin: auto;
+    width: 0%;
+    height: 0.3rem;
+    content: '';
+    position: absolute;
+    color: transparent;
+    background: white;
+}
+
+.navbar-link.active:after{
+    left: 0;
+    right: 0;
+    top: -1rem;
+    margin: auto;
+    width: 100%;
+    height: 0.3rem;
+    content: '';
+    position: absolute;
+    color: transparent;
+    background: #8d4bf6;
+}
+
+.navbar-link:hover:after{
+    width: 100%;
+}
+
+.scrolled .navbar-link{
+    color: #323232;
+}
+
+.scrolled .navbar-link:after, 
+.scrolled .navbar-link:before{
+    color: #323232;
+}
+
+.scrolled .navbar-link:after{
+    background: #323232;
+}
+
+.scrolled .navbar-link.active:after{
+    background: #8d4bf6;
+}
+
+.navbar-list-1{
+    gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+  
+.navbar-link-1 img{
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.5s;
+}
+
+.scrolled .navbar-link-1 img{
+    width: 2.8rem;
+    height: 2.8rem;   
+}
+/* Navbar Section */
+
+/* Mobile Menu Part */
+.mobile-navbar{
+    display: none;
+}
+
+.mobile-navbar-btn{
+    display: none;
+    cursor: pointer;
+    background: transparent;
+}
+  
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+}
+/* Mobile Menu Part */
+
+/* CSS Code For Navbar Section Is Using All The Pages For This Website. */
+
+/* ===== +++++ ===== */
+
+/* CSS Code For Hero Section Is Using All The Pages For This Website. */
+
+/* Hero Image Section */ 
+.hero-section{
+    width: 100vw;
+    height: 65rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.hero-section h4{
+    font-size: 4rem;
+    font-weight: normal;
+    font-family: 'Lilita One', cursive;
+    color: white;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase; 
+}
+  
+.hero-section-list{
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+  
+.hero-section-link{
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase; 
+    color: white;
+    transition: 0.5s;
+}
+
+.hero-section-link:hover{
+    color: #f12b00;
+}
+
+.hero-section-list span{
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-family: "Work Sans", sans-serif;
+    color: white;
+}
+  
+.hero-section-active{
+    color: white;
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase; 
+}
+/* Hero Image Section */
+
+/* CSS Code For Hero Section Is Using All The Pages For This Website. */
+
+/* ===== +++++ ===== */
+
+/* CSS Code For Footer Section Is Using All The Pages For This Website. */
+
+/* Footer Section */
+.upper-footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #202020;
+    padding: 6rem 0rem 3rem 0rem;
+}
+  
+.upper-footer-list{
+    gap: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    border: 4px solid white;
+}
+  
+.upper-footer-link{
+    color: white;
+    font-weight: normal;
+    font-size: 1.4rem;
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+  
+.upper-footer-link:hover{
+    color: #f12b00;
+}
+  
+.middle-footer{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  
+.middle-footer h4{
+    color: white;
+    font-weight: normal;
+    font-size: 2.8rem;
+    font-family: 'Lilita One', cursive;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+  
+.middle-footer-list{
+    gap: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+  
+.middle-footer-link img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.lower-footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414;
+    padding: 2rem 6rem;
+}
+  
+.lower-footer p{
+    color: white;
+    font-weight: normal;
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.lower-footer-list{
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+    list-style-type: none;
+}
+
+.lower-footer-list span{
+    color: white;  
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-decoration: none;
+}
+  
+.lower-footer-link{ 
+    color: white;  
+    font-weight: normal;
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+/* Footer Section */
+   
+/* Bottom To Top Button */
+#back-to-top-btn{
+    z-index: 99;
+    bottom: 6rem;
+    right: 1.5rem;
+    font-size: 1.8rem;
+    color: white;
+    background-color: #8d4bf6;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    padding: 1.2rem 1.6rem;
+    transition: 0.5s ease-in-out;
+}
+/* Bottom To Top Button */
+
+/* CSS Code For Footer Section Is Using All The Pages For This Website. */ 
+
+/* ===== +++++ ===== */
+
+/* Media Query For Different Screens. */
+
+    /* Smartphones & Tablet - Mobile First Approach. */
+    @media screen and (max-device-width: 480px)  {
+
+        /* Smartphones */ 
+        /* Navbar Menu */
+        .header{
+            height: 6rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            transition: height 0.5s ease;
+        }
+        
+        .scrolled {
+            height: 5.5rem; 
+        }
+        
+        .logo{
+            gap: 0.5rem;
+            margin-left: 2rem;
+        }
+        
+        .logo img{
+            width: 4rem;
+            height: 4rem;
+            transition: width 0.5s ease, 
+                        height 0.5s ease;
+        }
+        
+        .scrolled .logo img{
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+        
+        .logo-name{
+            font-size: 2rem;
+            transition: font-size 0.5s ease;
+        }
+        
+        .scrolled .logo-name{
+            font-size: 1.8rem;
+        }
+
+        .navbar-list{
+            display: none;
+        }
+
+        .navbar-list-1{
+            display: none;
+        }
+
+        .mobile-navbar{
+            gap: 5rem;
+            z-index: 999;
+            width: 70%;
+            height: 100%;
+            background: #202020;
+            top: 0;
+            left: 0;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(-100%);
+            transition: all 0.3s linear;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .mobile-navbar-list{
+            gap: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style-type: none;
+        }
+        
+        .mobile-navbar-link{
+            font-weight: 400;
+            font-size: 1.3rem;
+            font-family: "Work Sans", sans-serif; 
+            text-decoration: none;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            color: white;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .mobile-navbar-link:after, 
+        .mobile-navbar-link:before
+        {
+            color: white;
+            transition: all 0.5s; 
+        }
+        
+        .mobile-navbar-link:after{
+            left: 0;
+            right: 0;
+            top: -1rem;
+            margin: auto;
+            width: 0%;
+            height: 0.3rem;
+            content: '';
+            position: absolute;
+            color: transparent;
+            background: white;
+        }
+
+        .mobile-navbar-link.active:after{
+            left: 0;
+            right: 0;
+            top: -1rem;
+            margin: auto;
+            width: 100%;
+            height: 0.3rem;
+            content: '';
+            position: absolute;
+            color: transparent;
+            background: #8d4bf6;
+        }
+        
+        .mobile-navbar-link:hover:after{
+            width: 100%;
+        }
+
+        .mobile-navbar-list-1{
+            gap: 2.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style-type: none;
+        }
+        
+        .mobile-navbar-link-1 img{
+            width: 2.8rem;
+            height: 2.8rem;
+        }
+
+        .active .mobile-navbar{
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transform: translateX(0);
+        }
+
+        .mobile-navbar-btn{
+            z-index: 999;
+            display: block;
+            cursor: pointer;
+            padding: 0.2rem;
+            margin-right: 2rem;
+            border: 3.5px solid white;
+            transition: border 0.5s ease;
+        }
+
+        .scrolled .mobile-navbar-btn{
+            border: 3.5px solid #8d4bf6;
+        }
+
+        .mobile-nav-icon{
+            width: 2.6rem;
+            height: 2.6rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .scrolled .mobile-nav-icon{  
+            width: 2.4rem;
+            height: 2.4rem;
+            color: #8d4bf6;
+        }
+
+        .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]{
+            display: block;
+        }
+
+        .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"]{
+            display: none;
+        }
+        /* Navbar Menu */
+
+        /* Hero Image Section */
+        .hero-section{
+            width: 100%;
+            height: 30rem;
+        }
+        
+        .hero-section h4{
+            font-size: 2rem; 
+            letter-spacing: 0.3rem;
+        }
+        
+        .hero-section-list{
+            gap: 0.2rem;
+        }
+        
+        .hero-section-link{
+            font-size: 1.3rem;
+            letter-spacing: 0.1rem;
+        }
+
+        .hero-section-list span{
+            font-size: 1.3rem;
+        }
+        
+        .hero-section-active{
+            font-size: 1.3rem;
+            letter-spacing: 0.1rem;
+        }
+        /* Hero Image Section */
+
+        /* Footer Section */ 
+        .upper-footer {
+            padding: 3rem 0rem 2rem 0rem;
+        }
+          
+        .upper-footer-list{
+            gap: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .upper-footer-link{
+            font-size: 1.3rem;
+        }
+          
+        .middle-footer{
+            gap: 0.3rem;
+        }
+          
+        .middle-footer h4{
+            font-size: 2.2rem;
+        }
+          
+        .middle-footer-list{
+            gap: 2.3rem;
+        }
+          
+        .middle-footer-link img{
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+        
+        .lower-footer{
+            gap: 0.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.6rem 0rem;
+        }
+          
+        .lower-footer p{
+            font-size: 1rem;
+        }
+        
+        .lower-footer-list{
+            gap: 0.5rem;
+        }
+        
+        .lower-footer-list span{  
+            font-size: 0.9rem;
+        }
+          
+        .lower-footer-link{ 
+            font-size: 0.9rem;
+        }
+        /* Footer Section */    
+
+        /* Back To Top Button Section */
+        #back-to-top-btn{
+            right: 1.5rem;
+            bottom: 6.5rem;
+            font-size: 1.5rem;
+            padding: 1rem 1.4rem;
+        }
+        /* Back To Top Button Section */
+    }
+
+    @media screen and (min-device-width: 481px) and (max-device-width: 768px)  { 
+        
+        /* Tablets */ 
+        /* Navbar Menu */
+        .header{
+            height: 6.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            transition: height 0.5s ease;
+        }
+        
+        .scrolled {
+            height: 6rem; 
+        }
+        
+        .logo{
+            gap: 0.5rem;
+            margin-left: 3rem;
+        }
+        
+        .logo img{
+            width: 4.5rem;
+            height: 4.5rem;
+            transition: width 0.5s ease, 
+                        height 0.5s ease;
+        }
+        
+        .scrolled .logo img{
+            width: 4rem;
+            height: 4rem;
+        }
+        
+        .logo-name{
+            font-size: 2.2rem;
+            transition: font-size 0.5s ease;
+        }
+        
+        .scrolled .logo-name{
+            font-size: 2rem;
+        }
+
+        .navbar-list{
+            display: none;
+        }
+
+        .navbar-list-1{
+            display: none;
+        }
+
+        .mobile-navbar{
+            gap: 5.5rem;
+            z-index: 999;
+            width: 70%;
+            height: 100%;
+            background: #202020;
+            top: 0;
+            left: 0;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(-100%);
+            transition: all 0.3s linear;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .mobile-navbar-list{
+            gap: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style-type: none;
+        }
+        
+        .mobile-navbar-link{
+            font-weight: 400;
+            font-size: 1.4rem;
+            font-family: "Work Sans", sans-serif; 
+            text-decoration: none;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            color: white;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .mobile-navbar-link:after, 
+        .mobile-navbar-link:before
+        {
+            color: white;
+            transition: all 0.5s; 
+        }
+        
+        .mobile-navbar-link:after{
+            left: 0;
+            right: 0;
+            top: -1rem;
+            margin: auto;
+            width: 0%;
+            height: 0.3rem;
+            content: '';
+            position: absolute;
+            color: transparent;
+            background: white;
+        }
+
+        .mobile-navbar-link.active:after{
+            left: 0;
+            right: 0;
+            top: -1rem;
+            margin: auto;
+            width: 100%;
+            height: 0.3rem;
+            content: '';
+            position: absolute;
+            color: transparent;
+            background: #8d4bf6;
+        }
+        
+        .mobile-navbar-link:hover:after{
+            width: 100%;
+        }
+
+        .mobile-navbar-list-1{
+            gap: 3rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style-type: none;
+        }
+        
+        .mobile-navbar-link-1 img{
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .active .mobile-navbar{
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transform: translateX(0);
+        }
+
+        .mobile-navbar-btn{
+            z-index: 999;
+            display: block;
+            cursor: pointer;
+            padding: 0.2rem;
+            margin-right: 3rem;
+            border: 3.5px solid white;
+            transition: border 0.5s ease;
+        }
+
+        .scrolled .mobile-navbar-btn{
+            border: 3.5px solid #8d4bf6;
+        }
+
+        .mobile-nav-icon{
+            width: 2.8rem;
+            height: 2.8rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .scrolled .mobile-nav-icon{  
+            width: 2.6rem;
+            height: 2.6rem;
+            color: #8d4bf6;
+        }
+
+        .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]{
+            display: block;
+        }
+
+        .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"]{
+            display: none;
+        }
+        /* Navbar Menu */
+
+        /* Hero Image Section */
+        .hero-section{
+            width: 100%;
+            height: 35rem;
+        }
+        
+        .hero-section h4{
+            font-size: 2.5rem; 
+            letter-spacing: 0.3rem;
+        }
+        
+        .hero-section-list{
+            gap: 0.4rem;
+        }
+        
+        .hero-section-link{
+            font-size: 1.4rem;
+            letter-spacing: 0.1rem;
+        }
+
+        .hero-section-list span{
+            font-size: 1.4rem;
+        }
+        
+        .hero-section-active{
+            font-size: 1.4rem;
+            letter-spacing: 0.1rem;
+        }
+        /* Hero Image Section */
+
+        /* Footer Section */ 
+        .upper-footer {
+            padding: 3.2rem 0rem 2.2rem 0rem;
+        }
+          
+        .upper-footer-list{
+            gap: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+          
+        .middle-footer{
+            gap: 0.5rem;
+        }
+          
+        .middle-footer h4{
+            font-size: 2.4rem;
+        }
+          
+        .middle-footer-list{
+            gap: 2.5rem;
+        }
+          
+        .middle-footer-link img{
+            width: 2.6rem;
+            height: 2.6rem;
+        }
+        
+        .lower-footer{
+            gap: 0.3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.8rem 0rem;
+        }
+          
+        .lower-footer p{
+            font-size: 1rem;
+        }
+        
+        .lower-footer-list{
+            gap: 0.5rem;
+        }
+        
+        .lower-footer-list span{  
+            font-size: 0.9rem;
+        }
+          
+        .lower-footer-link{ 
+            font-size: 0.9rem;
+        }
+        /* Footer Section */    
+
+        /* Back To Top Button Section */
+        #back-to-top-btn{
+            bottom: 7rem;
+            right: 1.5rem;
+            font-size: 1.6rem;
+            padding: 1rem 1.4rem;
+        }
+        /* Back To Top Button Section */
+    }
+
+    @media screen and (min-device-width: 769px) and (max-device-width: 991px)  { 
+
+        /* Small Screens Devices, Laptops */ 
+        /* Navbar Menu */    
+        .header{
+            height: 7rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            transition: height 0.5s ease;
+        }
+        
+        .scrolled {
+            height: 6.5rem; 
+        }
+        
+        .logo{
+            gap: 0.5rem;
+            margin-left: 4rem;
+        }
+        
+        .logo img{
+            width: 5rem;
+            height: 5rem;
+            transition: width 0.5s ease, 
+                        height 0.5s ease;
+        }
+        
+        .scrolled .logo img{
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+        
+        .logo-name{
+            font-size: 2.4rem;
+            transition: font-size 0.5s ease;
+        }
+        
+        .scrolled .logo-name{
+            font-size: 2.2rem;
+        }
+
+        .navbar-list{
+            display: none;
+        }
+
+        .navbar-list-1{
+            display: none;
+        }
+
+        .mobile-navbar{
+            gap: 6rem;
+            z-index: 999;
+            width: 70%;
+            height: 100%;
+            background: #202020;
+            top: 0;
+            left: 0;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(-100%);
+            transition: all 0.3s linear;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .mobile-navbar-list{
+            gap: 3.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style-type: none;
+        }
+        
+        .mobile-navbar-link{
+            font-weight: 400;
+            font-size: 1.5rem;
+            font-family: "Work Sans", sans-serif; 
+            text-decoration: none;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            color: white;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .mobile-navbar-link:after, 
+        .mobile-navbar-link:before
+        {
+            color: white;
+            transition: all 0.5s; 
+        }
+        
+        .mobile-navbar-link:after{
+            left: 0;
+            right: 0;
+            top: -1rem;
+            margin: auto;
+            width: 0%;
+            height: 0.3rem;
+            content: '';
+            position: absolute;
+            color: transparent;
+            background: white;
+        }
+
+        .mobile-navbar-link.active:after{
+            left: 0;
+            right: 0;
+            top: -1rem;
+            margin: auto;
+            width: 100%;
+            height: 0.3rem;
+            content: '';
+            position: absolute;
+            color: transparent;
+            background: #8d4bf6;
+        }
+        
+        .mobile-navbar-link:hover:after{
+            width: 100%;
+        }
+
+        .mobile-navbar-list-1{
+            gap: 3.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style-type: none;
+        }
+        
+        .mobile-navbar-link-1 img{
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+
+        .active .mobile-navbar{
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transform: translateX(0);
+        }
+
+        .mobile-navbar-btn{
+            z-index: 999;
+            display: block;
+            cursor: pointer;
+            padding: 0.2rem;
+            margin-right: 4rem;
+            border: 3.5px solid white;
+            transition: border 0.5s ease;
+        }
+
+        .scrolled .mobile-navbar-btn{
+            border: 3.5px solid #8d4bf6;
+        }
+
+        .mobile-nav-icon{
+            width: 3rem;
+            height: 3rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .scrolled .mobile-nav-icon{  
+            width: 2.8rem;
+            height: 2.8rem;
+            color: #8d4bf6;
+        }
+
+        .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]{
+            display: block;
+        }
+
+        .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"]{
+            display: none;
+        }
+        /* Navbar Menu */
+
+        /* Hero Image Section */
+        .hero-section{
+            width: 100%;
+            height: 40rem;
+        }
+        
+        .hero-section h4{
+            font-size: 3rem; 
+            letter-spacing: 0.3rem;
+        }
+        
+        .hero-section-list{
+            gap: 0.6rem;
+        }
+        
+        .hero-section-link{
+            font-size: 1.5rem;
+            letter-spacing: 0.1rem;
+        }
+
+        .hero-section-list span{
+            font-size: 1.5rem;
+        }
+        
+        .hero-section-active{
+            font-size: 1.5rem;
+            letter-spacing: 0.1rem;
+        }
+        /* Hero Image Section */
+
+        /* Footer Section */ 
+        .upper-footer {
+            padding: 3.4rem 0rem 2.4rem 0rem;
+        }
+          
+        .upper-footer-list{
+            gap: 4rem;
+        }
+          
+        .middle-footer{
+            gap: 0.5rem;
+        }
+          
+        .middle-footer h4{
+            font-size: 2.6rem;
+        }
+          
+        .middle-footer-list{
+            gap: 2.3rem;
+        }
+          
+        .middle-footer-link img{
+            width: 2.8rem;
+            height: 2.8rem;
+        }
+        
+        .lower-footer{
+            padding: 2rem 4rem;
+        }
+          
+        .lower-footer p{
+            font-size: 1rem;
+        }
+        
+        .lower-footer-list{
+            gap: 0.5rem;
+        }
+        
+        .lower-footer-list span{  
+            font-size: 1rem;
+        }
+          
+        .lower-footer-link{ 
+            font-size: 1rem;
+        }
+        /* Footer Section */    
+
+        /* Back To Top Button Section */
+        #back-to-top-btn{
+            right: 1.5rem;
+            bottom: 5.5rem;
+            font-size: 1.6rem;
+            padding: 1rem 1.4rem;
+        }
+        /* Back To Top Button Section */
+    }
+    /* Smartphones & Tablet - Mobile First Approach. */
+
+    /* Laptop & Desktop */
+    @media screen and (min-device-width: 992px) and (max-device-width: 1024px)  { 
+
+        /* Large Screens Devices & Desktops */
+        /* Navbar Section */
+        .header{
+            height: 8rem;
+            transition: height 0.5s ease, 
+        }
+
+        .scrolled {
+            height: 7.5rem;
+        }
+
+        .logo{
+            gap: 0.5rem;
+        }
+
+        .logo img{
+            width: 5rem;
+            height: 5rem;
+            transition: width 0.5s ease, 
+                        height 0.5s ease;
+        }
+        
+        .scrolled .logo img{
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+        
+        .logo-name{
+            font-size: 2.4rem;
+            transition: font-size 0.5s ease;
+        }
+        
+        .scrolled .logo-name{
+            font-size: 2.2rem;
+        }
+
+        .navbar-list{
+            gap: 2.5rem;
+        }
+
+        .navbar-link{
+            font-size: 1.4rem;
+        }
+
+        .navbar-list-1{
+            gap: 2.5rem;
+        }
+        
+        .navbar-link-1 img{
+            width: 2.8rem;
+            height: 2.8rem;
+            transition: all 0.5s;
+        }
+
+        .scrolled .navbar-link-1 img{
+            width: 2.6rem;
+            height: 2.6rem;   
+        }
+        /* Navbar Section */
+
+        /* Hero Image Section */
+        .hero-section{
+            width: 100%;
+            height: 45rem;
+        }
+        
+        .hero-section h4{
+            font-size: 3.5rem; 
+        }
+        
+        .hero-section-list{
+            gap: 0.8rem;
+        }
+        /* Hero Image Section */
+    }
+    /* Laptop & Desktop */
+
+/* Media Query For Different Screens. */
